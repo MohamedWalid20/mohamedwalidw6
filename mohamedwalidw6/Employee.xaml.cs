@@ -26,6 +26,7 @@ namespace mohamedwalidw6
             loaddata();
         }
         public void loaddata(){
+            //load datagrid
             int ID = MainWindow.employeeidlogin;
             Firsttable.ItemsSource = databasecontext.Tasks.Where(s => (s.status == "Pending" || s.status == "In Progress") && s.employeeid == ID).ToList();
             Secondtable.ItemsSource = databasecontext.Tasks.Where(k => k.status == "Completed" && k.employeeid == ID).ToList();
