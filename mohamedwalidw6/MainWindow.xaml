@@ -1,0 +1,27 @@
+﻿<Window x:Class="mohamedwalidw6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:mohamedwalidw6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <TextBlock Margin="200,80,0,80" Width="150" Height="50" FontWeight="Bold" FontSize="30">Username</TextBlock>
+            <TextBox x:Name="usernametext" Margin="0,82" Width="200" Height="45" FontSize="15"/>
+            <TextBlock Margin="-550,160,0,0" Width="150" Height="50" FontWeight="Bold" FontSize="30">Password</TextBlock>
+            <PasswordBox x:Name="passwordtext" Margin="-200,162,0,2" Width="200" Height="45" FontSize="15"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <Button Click="Login" Margin="340,26,0,123" FontWeight="Bold" Height="60" Width="150" FontSize="30" Content="Log In"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
